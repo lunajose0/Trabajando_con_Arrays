@@ -37,6 +37,8 @@ function showList(array) {
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  // Escribe tu solución aquí
-  // Sugerencia de cómo mostrar el array => showList(strangeArray);
+  // Solución
+  const filteredArray = strangeArray.filter((element) => typeof element === "string");
+  filteredArray.sort();
+  showList(filteredArray);
 });
